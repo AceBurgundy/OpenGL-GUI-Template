@@ -1,50 +1,91 @@
-# OpenGL GUI Template
+# 🧱 OpenGL GUI Template
 
-Welcome to OpenGL GUI Template. A template you can extend for works related to generating OpenGL generated graphics with customtkinter in a GUI based app.
+## 🎯 Project Purpose
 
-## Prerequisites
-- Make sure you have the latest version of Python installed on your system.
-- (Optional) Create a virtual environment.
+This simple project was created as a **starter template** for students, hobbyists, or developers interested in learning how to embed OpenGL graphics within a Python GUI using **CustomTkinter**.
+It is intentionally **minimal** and demonstrates just **one thing**: rendering a continuously **rotating cube** inside a GUI window.
 
-## Installation
-1. Clone or download this repository to your local machine.
-2. Open a terminal or command prompt and navigate to the project's root directory.
+## 🌀 What It Does
 
-   ```shell
-   cd path/to/opengl-gui-template
+* Opens a GUI window using `customtkinter`
+* Renders a 3D cube inside the GUI using `PyOpenGL`
+* Rotates the cube continuously as a basic animation
 
-3. Install the required libraries from the requirements.txt file using pip:
+That’s it — no controls, no interactivity, no extra features.
+It’s designed to be clean, understandable, and extendable.
 
-   ```shell
+## 🖼️ Preview
+
+| GUI Interface |
+| ------------- |
+| ![UI](UI.png) |
+
+## 📦 Prerequisites
+
+* **Python 3.8+**
+* **pip** for dependency installation
+* (Optional) A virtual environment for clean dependency management
+
+## ⚙️ Installation
+
+1. **Clone this repository**:
+
+   ```bash
+   git clone https://github.com/your-username/opengl-gui-template.git
+   cd opengl-gui-template
+   ```
+
+2. **Install required dependencies**:
+
+   ```bash
    pip install -r requirements.txt
+   ```
 
-## Running the App
+## ▶️ Running the App
 
-    python app.py
+Launch the app with:
 
-The App should now load and you should now be able to use the app
+```bash
+python app.py
+```
 
-## Features
+You should see a window pop up with a **rotating 3D cube** rendered inside a GUI.
 
-- Sample Button
-- Sample 3D Cube rendering
-- Simple easy to extend GUI
+## 💡 How to Extend
 
-## Images
+This project is meant to be built upon. You can add:
 
-![UI](UI.png)
+* More OpenGL shapes or scenes
+* GUI controls for camera or object interaction
+* Texture mapping, lighting, or shading
+* Event-driven actions like mouse or keyboard input
 
-## Acknowledgements
+Modify the `OpenGLFrame` class to change what’s rendered or animated.
 
-- [CTkColorPicker](https://github.com/Akascape/CTkColorPicker): A much better color picker when it comes to UI than the default Tkinter color picker.
-- [pyopengltk](https://github.com/jonwright/pyopengltk): Helped me to actually draw shapes on a tkinter frame using OpenGL. If it wasn't for this I would've moved on to use PyGame for the UI.
+## 🧰 Technologies Used
 
-## License
+* **Python**
+* **PyOpenGL**
+* **pyopengltk** – for embedding OpenGL into Tkinter
+* **CustomTkinter** – for modern GUI layout
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 🙏 Acknowledgements
 
-The MIT License is a permissive open-source license that allows users to freely use, modify, and distribute this software, subject to certain conditions. Users are granted the freedom to use the software for any purpose, including commercial purposes, without requiring payment or attribution to the original author.
+* [pyopengltk](https://github.com/jonwright/pyopengltk): Enables OpenGL to render inside a Tkinter frame.
+* [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter): Beautiful modern UI components for Python.
 
-Under the terms of the MIT License, users may modify the software and distribute derivative works, provided that the original copyright notice and permission notice are included in all copies or substantial portions of the software.
+## 📄 License
 
-The MIT License imposes no additional restrictions on users beyond those specified in the license itself. It provides users with maximum flexibility while ensuring that the original author's copyright notice and disclaimer of liability are preserved.
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for full details.
+
+## 📚 Educational Use
+
+This was created as a basic hands-on template to help students (ourselves included) understand:
+
+* How OpenGL rendering works
+* How to place OpenGL inside a GUI window
+* How to structure a clean, minimal Python app with a GUI
+
+We hope it helps you get started too.
+
+Let me know if you'd like to add some beginner tips or a short customization guide inside a `docs/` folder.
